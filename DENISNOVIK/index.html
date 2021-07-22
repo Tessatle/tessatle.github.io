@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="first__screen">
+		<header class="header" id="header">
+			<div class="container">
+				<div class="header__body">
+					<div class="header__burger" id="burger">
+						<span></span>
+					</div>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li>
+								<a href="#section1" class="header__link">Home</a>
+							</li>
+
+							<li>
+								<a href="#section5" class="header__link">About me</a>
+							</li>
+
+							<li>
+								<a href="#section7" class="header__link">Skills</a>
+							</li>
+
+							<li>
+								<a href="#section8" class="header__link">Portfolio</a>
+							</li>
+
+							<li>
+								<a href="#section9" class="header__link">Contacts</a>
+							</li>
+						</ul>
+
+						<div class="header__line">
+						</div>
+					</nav>
+				</div>
+			</div>
+		</header>
+
+		<section class="section1">
+			<div class="container">
+				<div class="section1__wrapper">
+					<div class="section1__up">
+						<h1>Denis<br>Novik</h1>
+						<h2>UX | UI designer<br>24 years old, Minsk</h2>
+						<img src="img/RUENG.png" alt="">
+					</div>
+					<div class="section1__body">
+						<img src="img/BSPP2266.png" id="main-picture" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<section class="section2">
+		<div class="container">
+			<div class="section2__wrapper">
+				<h1>About me</h1>
+				<div class="section2__texts">
+					<h2>Hi, I'm Denis – UX/UI designer from Minsk.<br>I'm interested in design and everything connected with it.</h2>
+					<h2>I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</h2>
+					<h2>Ready to implement excellent projects<br>with wonderful people.</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section3">
+		<div class="container">
+			<div class="section3__wrapper">
+				<h1>Skills</h1>
+				<h2>I work in such programs as</h2>
+
+				<div class="programs">
+					<div class="programs__item">
+						<img src="img/Photoshop.png" alt="">
+						<p>Adobe<br>Photoshop</p>
+						<img src="img/stars.png" alt="">
+					</div>
+
+					<div class="programs__item">
+						<img src="img/Illustrator.png" alt="">
+						<p>Adobe<br>Illustrator</p>
+						<img src="img/less-stars.png" alt="">
+					</div>
+
+					<div class="programs__item">
+						<img src="img/After__Effects.png" alt="">
+						<p>Adobe<br>After Effects</p>
+						<img src="img/stars.png" alt="">
+					</div>
+
+					<div class="programs__item">
+						<img src="img/Figma.png" alt="">
+						<p>Figma<br>Online-Service</p>
+						<img src="img/stars.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section4">
+		<div class="container">
+			<div class="section4__wrapper">
+				<h1>Portfolio</h1>
+
+				<div class="portfolio__item">
+					<img src="img/woman_web.png" alt="" id="woman">
+					<p>Online fashion store - Homepage</p>
+				</div>
+
+				<div class="portfolio__item">
+					<img src="img/reebok_web.png" alt="" id="reebok">
+					<p>Reebok Store - Concept</p>
+				</div>
+
+				<div class="portfolio__item">
+					<img src="img/braun-web.png" alt="" id="braun">
+					<p>Braun Landing Page - Concept</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__wrapper">
+				<h1>Contacts</h1>
+				<h2>Want to know more or just chat?<br>
+					You are welcome!</h2>
+				<a href="" class="footer__button">Send message</a>
+				<div class="socials">
+					<img src="img/linkedin.png" alt="">
+					<img src="img/instagram.png" alt="">
+					<img src="img/behance.png" alt="">
+					<img src="img/basketball.png" alt="">
+				</div>
+
+				<p>Like me on<br>
+					LinkedIn, Instagram, Behance, Dribble</p>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('.header__burger').click(function(event) {
+				$('.header__burger,.header__menu').toggleClass('active');
+			});
+		});
+		$(document).ready(function() {
+			$('.header__link').click(function(event) {
+				$('.header__burger,.header__menu').removeClass('active');
+			});
+		});
+	</script>
+	<script src="js/index.js"></script>
+</body>
+</html>
