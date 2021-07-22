@@ -223,6 +223,9 @@ html, body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  opacity: 0;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 @media (max-width: 550px) {
   .section2 .section2__wrapper {
@@ -270,6 +273,11 @@ html, body {
   padding-bottom: 0;
 }
 
+.section3 {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
 .section3 .section3__wrapper {
   height: 500px;
   display: -webkit-box;
@@ -377,6 +385,11 @@ html, body {
   padding-top: 60px;
   padding-bottom: 70px;
 }
+.section4 .section4__wrapper {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0;
+}
 .section4 h1 {
   text-align: center;
   font-size: 34px;
@@ -406,24 +419,47 @@ html, body {
 .section4 .portfolio__item img {
   padding-bottom: 35px;
   max-width: 100%;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
-.section4 .portfolio__item p {
+.section4 .portfolio__item img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.section4 .portfolio__item a {
+  color: black;
   font-size: 18px;
   text-align: center;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+.section4 .portfolio__item a:hover {
+  cursor: pointer;
+  color: #bdbaba;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 @media (max-width: 518px) {
-  .section4 .portfolio__item p {
+  .section4 .portfolio__item a {
     font-size: 16px;
   }
 }
 @media (max-width: 400px) {
-  .section4 .portfolio__item p {
+  .section4 .portfolio__item a {
     font-size: 14px;
   }
 }
 
+.footer {
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  opacity: 0.6;
+}
 .footer .footer__wrapper {
   height: 550px;
   display: -webkit-box;
@@ -477,6 +513,7 @@ html, body {
   transition: all 0.2s linear;
 }
 .footer .footer__wrapper .footer__button:hover {
+  cursor: pointer;
   background: #bdbaba;
   opacity: 1;
   -webkit-transition: all 0.2s linear;
