@@ -25,6 +25,7 @@ button {
 
 .main {
   background: #34807E;
+  min-height: 100vh;
 }
 
 .header {
@@ -362,7 +363,7 @@ button {
 }
 @media (max-width: 650px) {
   .section__main .main__inner .main__body h1 {
-    font-size: 32px;
+    font-size: 36px;
   }
 }
 .section__main .main__inner .main__body h2 {
@@ -412,6 +413,7 @@ button {
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
   font-size: 20px;
+  font-weight: 600;
 }
 @media (max-width: 920px) {
   .section__main .main__inner .main__body .main__button {
@@ -587,6 +589,11 @@ button {
 }
 .section__main .main__inner .main__image img {
   max-width: 100%;
+}
+@media (max-width: 400px) {
+  .section__main .main__inner .main__image img {
+    width: 280px;
+  }
 }
 
 .about {
@@ -1467,8 +1474,8 @@ button {
 }
 @media (max-width: 400px) {
   .header__logo img {
-    width: 100px;
-    height: 35px;
+    width: 120px;
+    height: 45px;
   }
 }
 

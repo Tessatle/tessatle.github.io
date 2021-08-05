@@ -19,6 +19,7 @@ button{
 }
 .main{
 	background: #34807E;
+	min-height: 100vh;
 }
 .header{
 	background: #34807E;
@@ -298,7 +299,7 @@ button{
 					font-size: 48px;
 				};
 				@media (max-width: 650px){
-					font-size: 32px;
+					font-size: 36px;
 				};
 			}
 			h2{
@@ -334,6 +335,7 @@ button{
 				color: white;
 				transition: all .2s linear;
 				font-size: 20px;
+				font-weight: 600;
 				@media (max-width: 920px){
 					width: 175px;
 					font-size: 18px;
@@ -465,6 +467,10 @@ button{
 			};
 			img{
 				max-width: 100%;
+
+				@media (max-width: 400px){
+					width: 280px;
+				};
 			}
 		}
 	}
@@ -1111,8 +1117,8 @@ button{
 		height: 50px;
 	};
 	@media (max-width: 400px){
-		width: 100px;
-		height: 35px;
+		width: 120px;
+		height: 45px;
 	};
 }
 
@@ -1538,7 +1544,6 @@ button{
 					max-height: 0;
 					overflow: hidden;
 					transition: max-height 0.2s ease-out;
-
 					p{
 						font-size: 16px;
 
