@@ -1897,6 +1897,9 @@ button {
   margin-top: 0;
 }
 .order .order__wrapper .order__blank .order__button {
+  cursor: pointer;
+  border: 0;
+  outline: none;
   margin-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
